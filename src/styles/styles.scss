@@ -1,0 +1,55 @@
+@import '../styles/normalize';
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.list {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 24px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.container {
+    padding: 24px;
+    background-color: #dbfaea;
+    border-radius: 16px;
+}
+
+.list-container {
+    margin-bottom: 24px;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.total,
+.average {
+    font-size:24px;
+    display: flex;
+    justify-content: space-between;
+
+    &__tourists {
+        font-weight: bold;
+    }
+}
+
+.conclusions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
